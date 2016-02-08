@@ -1,0 +1,12 @@
+ name: CyanAC
+ version: 0.0.2
+ description: The CyanAC-Plugin
+ author: Moritz30
+ authors: [Moritz30] 
+ website: http://cyanac.info/
+ 
+ main: info.cyanac.plugin.bukkit.Main
+ 
+ commands:
+   cyanac:
+     description: The CyanAC Maincommand

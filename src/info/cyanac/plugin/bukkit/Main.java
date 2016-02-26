@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -72,7 +73,7 @@ public class Main extends JavaPlugin implements Listener {
 				AntiFly.vls[1] = "0";
 				
 			}
-			}, 60L, 60L);
+			}, 3L, 3L);
 
 		
 	}
@@ -100,10 +101,37 @@ public class Main extends JavaPlugin implements Listener {
 				p.sendMessage(ChatColor.DARK_AQUA + "CYANAC-HELP:");
 				p.sendMessage(ChatColor.DARK_AQUA + "/cyanac help: Displays this help text");
 				p.sendMessage(ChatColor.DARK_AQUA + "/cyanac resync: Resync the files");
+				p.sendMessage(ChatColor.DARK_AQUA + "/cyanac license addkey <Key>: Set the license key");
+				p.sendMessage(ChatColor.DARK_AQUA + "/cyanac license addpage <URL>: Set the servers page in the cyanacs server registry");
 				
 			}else if(args[0].equalsIgnoreCase("resync")){
 				
 				updateData();
+				
+			}else if(args[0].equalsIgnoreCase("license") && args[1].equalsIgnoreCase("addkey")){
+				
+				File licensekeyfile = new File("plugins/CyanAC/license.key");
+				
+				if(licensekeyfile.exists()){
+					
+					licensekeyfile.delete();
+					
+				}
+				
+				try {
+					
+					licensekeyfile.createNewFile();
+					
+					PrintWriter licensekeyfilewriter = new PrintWriter("plugins/CyanAC/license.key", "UTF-8");
+					licensekeyfilewriter.println(args[2]);
+					licensekeyfilewriter.close();
+					
+				} catch (IOException e) {
+					
+					e.printStackTrace();
+					
+				}
+				
 				
 			}
 			

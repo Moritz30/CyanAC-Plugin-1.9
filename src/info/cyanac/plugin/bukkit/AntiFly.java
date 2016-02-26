@@ -42,7 +42,7 @@ public class AntiFly implements Listener {
 			vls[0] = p.getName();	
 			vls[1] = String.valueOf(Integer.parseInt(vls[1]) + 1);
 			
-			if(Integer.parseInt(vls[1]) > 9){
+			if(Integer.parseInt(vls[1]) > 20){
 				
 				p.kickPlayer(ChatColor.DARK_AQUA + "CyanAC detected Fly/CreativeFly.");
 				

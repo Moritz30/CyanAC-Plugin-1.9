@@ -18,6 +18,7 @@ public class CyanACTabCompleter implements TabCompleter {
 			
 			tabCompletionList.add("help");
 			tabCompletionList.add("resync");
+			tabCompletionList.add("license");
 			
 			return tabCompletionList;
 			

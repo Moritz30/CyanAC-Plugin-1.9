@@ -36,6 +36,9 @@
     <resources>
       <resource>
         <directory>src</directory>
+            <excludes>
+                <include>resources</include>
+            </excludes>
       </resource>
       <resource>
         <directory>src/resources/</directory>

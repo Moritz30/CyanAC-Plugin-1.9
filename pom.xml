@@ -37,7 +37,7 @@
       <resource>
         <directory>src/</directory>
             <excludes>
-                <exclude>resources/</exclude>
+                <exclude>resources/**/*</exclude>
             </excludes>
       </resource>
       <resource>

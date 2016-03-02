@@ -36,6 +36,9 @@
     <resources>
       <resource>
         <directory>src</directory>
+      </resource>
+      <resource>
+        <directory>{project.basedir}</directory>
             <includes>
                 <include>**/*.yml</include>
             </includes>

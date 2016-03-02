@@ -35,13 +35,6 @@
     <testSourceDirectory>src/test</testSourceDirectory>
     <resources>
       <resource>
-        <directory>src/</directory>
-            <filtering>true</filtering>
-            <excludes>
-                <exclude>resources/**/*</exclude>
-            </excludes>
-      </resource>
-      <resource>
         <directory>src/resources/</directory>
             <includes>
                 <include>plugin.yml</include>

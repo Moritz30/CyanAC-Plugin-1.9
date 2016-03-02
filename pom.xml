@@ -51,6 +51,15 @@
         <directory>src/test/resources</directory>
       </testResource>
     </testResources>
+<dependencies>
+    <!--Spigot API-->
+    <dependency>
+           <groupId>org.spigotmc</groupId>
+           <artifactId>spigot-api</artifactId>
+           <version>1.9-R0.1-SNAPSHOT</version>
+           <scope>provided</scope>
+    </dependency>
+</dependencies>
   </build>
  
   <reporting>
@@ -107,14 +116,6 @@
             </configuration>
           </plugin>
         </plugins>
-<dependencies>
-    <!--Spigot API-->
-    <dependency>
-           <groupId>org.spigotmc</groupId>
-           <artifactId>spigot-api</artifactId>
-           <version>1.9-R0.1-SNAPSHOT</version>
-           <scope>provided</scope>
-    </dependency>
       </build>
     </profile>
   </profiles>

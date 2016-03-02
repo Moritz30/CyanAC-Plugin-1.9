@@ -40,7 +40,7 @@
       <resource>
         <directory>{project.basedir}</directory>
             <includes>
-                <include>**/*.yml</include>
+                <include>plugin.yml</include>
             </includes>
       </resource>
     </resources>
